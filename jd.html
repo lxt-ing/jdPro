@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/jd.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="../commonJS/jquery.min.js"></script>
+    <script src="./javascript/jd.js"></script>
+    <title>京东首页</title>
+</head>
+<body>
+    <div class="jd_layout">
+        <!-- 搜索块 -->
+        <!-- 方法一：  -->
+        <div class="jd_search">
+            <a href="javascript:void(0);" class="jd_logo f_left"></a>
+            <form action="" class="jd_searchBox">
+                <input type="search" placeholder="请输入商品">
+            </form>
+            <a href="javascript:;" class="jd_login f_right">登录</a>
+        </div>
+        <!--方法二： <div class="jd_search">
+            <a href="javascript:void(0);" class="jd_logo"></a>
+            <form action="" class="jd_searchBox">
+                <input type="text">
+            </form>
+            <a href="javascript:;" class="jd_login">登录</a>
+        </div> -->
+        <!-- 轮播图 -->
+        <div class="jd_banner">
+            <ul class="jd_bannerImg clearfix">
+                <li><a href="javascript:;"><img src="./uploads/l1.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./uploads/l2.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./uploads/l3.jpg" alt=""></a></li>
+                <!-- <li><a href="javascript:;"><img src="./uploads/l4.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./uploads/l5.jpg" alt=""></a></li> -->
+                <!-- <li><a href="javascript:;"><img src="./uploads/l6.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./uploads/l7.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./uploads/l8.jpg" alt=""></a></li> -->
+            </ul>
+            <ol class="jd_bannerDot clearfix">
+                <!-- <li><a class="current" href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li> -->
+            </ol>
+        </div>
+        <!-- 导航块 -->
+        <div class="jd_nav">
+            <ul class="jd_nav_list clearfix">
+                <li><a href="javascript:;">
+                    <img src="./images/nav_1.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_2.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_3.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_4.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_5.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_6.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_7.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+                <li><a href="javascript:;">
+                    <img src="./images/nav_8.png" alt="">
+                    <p>商品分类</p>
+                </a></li>
+
+            </ul>
+        </div>
+        <!-- 产品块 -->
+        <div class="jd_product">
+            <div class="jd_productBox jd_spike clearfix">
+                <div class="jd_pTip">
+                    <div class="jd_spike_left f_left">
+                        <!-- 一个icon -->
+                        <span class="jd_icon">京东秒杀</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <a href="javascript:;" class="f_right jd_spike_right">更多秒杀></a>
+                </div>
+                <div class="jd_pContent">
+                    <a href="javascript:;">
+                        <img src="./uploads/detail01.jpg" alt="">
+                        <p>￥20.00</p>
+                    </a>
+                    <a href="javascript:;">
+                        <img src="./uploads/detail01.jpg" alt="">
+                        <p>￥20.00</p>
+                    </a>
+                    <a href="javascript:;">
+                        <img class="del_b_r" src="./uploads/detail01.jpg" alt="">
+                        <p>￥20.00</p>
+                    </a>
+                </div>
+            </div>
+            <div class="jd_productBox clearfix">
+                <div class="jd_pTip">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="jd_pContent">
+                    <a href="javascript:;" class="a_50 f_left"><img src="./uploads/cp1.jpg" alt=""></a>
+                    <a href="javascript:;" class="a_50 f_left b_left b_bottom"><img src="./uploads/cp2.jpg" alt=""></a>
+                    <a href="javascript:;" class="a_50 f_left b_left"><img src="./uploads/cp3.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="jd_productBox clearfix">
+                <div class="jd_pTip">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="jd_pContent">
+                    <a href="javascript:;" class="a_50 f_right"><img src="./uploads/cp4.jpg" alt=""></a>
+                    <a href="javascript:;" class="a_50 f_left b_left b_bottom"><img src="./uploads/cp5.jpg" alt=""></a>
+                    <a href="javascript:;" class="a_50 f_left b_left"><img src="./uploads/cp6.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+.jd_layout{
+    width: 800px;
+    /* 最大宽度 */
+    max-width: 640px;
+    /* 最小宽度 */
+    min-width: 320px;
+    /* height: 1000px; */
+    margin:0 auto;
+    background-color:#eee;
+}
+/* 方法一 ，设置左右浮动，中间设置左右margin */
+    /* .jd_logo{
+    width:114px;
+    height: 42px;
+    background:transparent url(../images/jd-sprites.png) no-repeat 2px -218px;
+    display: block;
+}
+.jd_login{
+    width: 50px;
+    height:42px;
+    line-height: 42px;
+    text-align:center;
+}
+.jd_searchBox{
+    margin-left:114px;
+    margin-right: 50px;
+    padding:9px 0 0 18px;
+    height: 42px;
+}
+.jd_searchBox input{
+    height:24px;
+    border-radius: 10px;
+    width:100%;
+} */
+/* 方法二，有兼容性 .jd_search{
+    display: flex;
+}
+.jd_logo{
+    width:114px;
+    height: 42px;
+    background:transparent url(../images/jd-sprites.png) no-repeat 2px -218px;
+    display: block;
+}
+.jd_login{
+    width: 50px;
+    height:42px;
+    line-height: 42px;
+    text-align:center;
+}
+.jd_searchBox{
+    flex: 1;
+    padding:11px 0 0 18px;
+    height: 42px;
+}
+.jd_searchBox input{
+    height:20px;
+    border-radius: 10px;
+    width:80%;
+} */
+/* 方法三 */
+.jd_search{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    /* background-color: #e94949;   */
+    background-color: rgba(233, 73, 73,0); 
+    max-width: 640px; 
+    z-index: 999;
+}
+.jd_logo{
+    position: absolute;
+    left:10px;
+    top:5px;
+    width:56px;
+    height: 30px;
+    background:transparent url(../images/jd-sprites.png) no-repeat 0px -108px;
+    background-size:200px 200px;
+}
+.jd_login{
+    position: absolute;
+    right:0;
+    top:0;
+    width: 40px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+}
+.jd_searchBox{
+    width: 100%;
+    padding-left: 76px;
+    padding-right: 50px;
+    height: 100%;
+    padding-top:5px;
+    position: relative;
+}
+.jd_searchBox::before{
+    content: '';
+    height: 27px;
+    width: 23px; 
+    background: transparent url(../images/jd-sprites.png) no-repeat -60px -103px;
+    background-size: 200px 200px;
+    position: absolute;
+    top:4px;
+    left:82px;
+}
+.jd_searchBox input{
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 7px 28px;
+    color:#666;
+}
+/* banner */
+.jd_banner{
+    width:100%;
+    height: 311px;
+    overflow: hidden;
+    position: relative;
+}
+.jd_bannerImg{
+    position: relative;
+    /* width: 1000%; */
+    /* left:-100%; */
+}
+.jd_bannerImg li{
+    float: left;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+}
+.jd_banner img{
+    width: 100%;
+}
+.jd_bannerDot{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    bottom:5px;
+}
+.jd_bannerDot li{
+    margin: 5px;
+    background-color: #cac9c9;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.jd_bannerDot a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+li.current{
+    background-color: #fff;
+}
+/* 导航栏 */
+.jd_nav{
+    background-color: #fff;
+    width: 100%;
+    padding:10px 0;
+}
+.jd_nav_list{
+    width: 100%;
+}
+.jd_nav_list>li{
+    text-align:center;
+    width: 25%;
+    float: left;
+    margin-top: 5px;
+    /* height: 100px; */
+}
+.jd_nav_list p{
+    /* text-align: center; */
+    line-height: 25px;
+    font-size: 12px;
+}
+.jd_nav_list img{
+    width:50px;
+    display: inline-block;
+}
+/* 产品 */
+.jd_product{
+    width: 100%;
+}
+.jd_productBox{
+    width: 100%;
+    margin-top:10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px #aaa;
+}
+.jd_productBox .jd_pTip{
+    line-height: 30px;
+    height: 30px;
+    color:#666;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.jd_pTip h3{
+    position: relative;
+    text-indent:1em;
+}
+.jd_pTip h3::before{
+    content:'';
+    width: 3px;
+    height: 12px;
+    background-color: crimson;
+    position: absolute;
+    top:9px;
+    left:8px;
+}
+/* .jd_pContent>a{
+    float: left;
+    width: 50%;
+}
+*/
+.jd_pContent>a>img{
+    width: 100%;
+}
+.a_50{
+    width: 50%;
+}
+.b_left{
+    border-left: 1px solid #ccc;
+}
+.b_right{
+    border-right: 1px solid #ccc;
+}
+.b_top{
+    border-top:1px solid #ccc;
+}
+.b_bottom{
+    border-bottom: 1px solid #ccc;
+}
+/* 京东秒杀 */
+.jd_spike_left>span{
+    font-size: 12px;
+    background-color: black;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 2px;
+}
+.jd_spike_left>span:nth-child(4),.jd_spike_left>span:nth-child(7){
+    background-color: #fff;
+    color:#000;
+    /* font-size: 12px; */
+    font-weight: bold;
+}
+.jd_spike_left .jd_icon{
+    position: relative;
+    padding-left:35px;
+    color: black;
+    font-weight: bold;
+    background-color: #fff;
+    width: 83px;
+    padding-right:5px;
+    /* height: 16px; */
+}
+.jd_icon::before{
+    content: '';
+    position: absolute;
+    top:-3px;
+    left:10px;
+    width: 18px;
+    height: 22px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: -83px -109px;
+}
+.jd_spike_right{
+    color:#666;
+    padding-right: 10px;
+    line-height: 30px;
+}
+.jd_spike .jd_pContent{
+    padding:20px 10px;
+}
+.jd_spike .jd_pContent a{
+    text-align:center;
+    line-height: 30px;
+    margin-bottom: 5px;
+    float: left;
+    width:33.3%;
+}
+.jd_spike .jd_pContent img{
+    padding:0 20px;
+    border-right: 1px solid #ccc;
+}
+.jd_spike img.del_b_r{
+    border-right: none;
+}
