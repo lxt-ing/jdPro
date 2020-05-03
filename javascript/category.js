@@ -11,10 +11,10 @@ window.onload = function(){
 
     l_kind.addEventListener('touchstart',function(e){
         l_startY = e.targetTouches[0].clientY;
-        console.log(e);
     });
     l_kind.addEventListener('touchmove',function(e){
         l_moveY = e.changedTouches[0].clientY;
+        
         diffY = l_moveY - l_startY;
         // 需要将l_startY 重新复制 ，不然每次执行move事件，startY均为同一个值，都会重复加一部分值
         l_startY = l_moveY;
@@ -54,7 +54,27 @@ window.onload = function(){
     for(var i = 0; i < lis.length;i++){
         lis[i].index = i;
     }
-    
-    //  移动端的单击事件，click 会有延迟 ，所以用touchstart touchmove touchend 模拟单击事件
-
+    itcast.tap(l_kind,function(e){
+        // 执行点击事件；1.消除class
+        for(var i = 0;i < lis.length;i++){
+            lis[i].classList.remove('active');
+        }
+        // 2.给点击的li添加active类
+        var li = e.target.parentNode;
+        li.classList.add('active');
+        // 3.点击的每个li都在顶端；
+        var liHeight = li.offsetHeight;
+        var curTop = -(li.index * 50);
+        l_kind.style.transition = 'top .5s';
+        // 当滚动距离大于最小高度时，修改为最小高度
+        if(curTop <= minTop){
+            l_kind.style.top = minTop + 'px';
+            // 重置currentY
+            currentY = minTop;
+        }else{
+            l_kind.style.top = curTop + 'px';
+            // 重置currentY 
+            currentY = curTop;
+        }
+    });
 };
