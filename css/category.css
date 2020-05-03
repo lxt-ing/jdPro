@@ -1,0 +1,131 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 980px;
+    margin:auto;
+}
+.ct_layout{
+    /* min-width: 320px; */
+    /* max-width: 980px; */
+    /* margin:auto; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* 头部部分 */
+.ct_header{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+}
+.ct_search{
+    width:100%;
+    padding:10px 50px;
+    background-color: blueviolet;
+    height: 100%;
+}
+.ct_search>input{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.ct_back,.ct_menu{
+    position: absolute;
+    top:0;
+    height: 100%;
+    padding:15px;
+    width: 50px;
+    background-image: url(../images/jd-sprites.png);
+    background-size:200px 200px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.ct_back{
+    left:0;
+    background-position: -22px 0px;
+}
+.ct_menu{
+    right: 0;
+    background-position: -60px 0px;
+}
+/* 主体部分 */
+.ct_content{
+    padding-top:50px;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.ct_cLeft{
+    /* position: absolute; */
+    overflow: hidden;
+    width: 100px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.ct_cLeft ul{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.ct_cLeft a{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    color:#333;
+    background-color:#eee;
+    border-right:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.ct_cLeft li.active>a{
+    color:#e92322;
+    background-color:#fff;
+    border:none;
+}
+.ct_cRight{
+    margin-left:100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ct_rImg{
+    width: 100%;
+}
+.ct_rImg img{
+    width: 100%;
+}
+.ct_cRight h3{
+    line-height:30px;
+    padding-left: 1em;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.ct_hotCategory{
+    overflow-y: scroll;
+    overflow-x:auto;
+    flex:1;
+}
+.ct_hotCategory li{
+    margin-top:5px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.ct_hotCategory a{
+    padding:10px;
+    width: 100%;
+    display: inline-block;
+}
+.ct_hotCategory img{
+    /* max-height: 100px; */
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+}

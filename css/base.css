@@ -35,7 +35,7 @@ input{
 .f_right{
     float: right;
 }
-.clearfix::after,.clearfix::before{
+.clearfix::after{
     content: '';
     visibility: hidden;
     height: 0;
